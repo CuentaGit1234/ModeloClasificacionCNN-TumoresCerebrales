@@ -7,7 +7,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    "serve:ssr:frontend": "node dist/Frontend/server/App.jsx" 
 
   },
   "dependencies": {
