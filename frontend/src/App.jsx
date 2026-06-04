@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "http://localhost:5000";
 function App() {
   const [image, setImage] = useState(null);
   const [prediction, setPrediction] = useState("");
