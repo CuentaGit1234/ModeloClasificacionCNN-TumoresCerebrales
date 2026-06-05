@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-const API_URL = "http://localhost:5000";
+const API_URL = "https://modeloclasificacioncnn-tumorescerebrales.onrender.com";
 function App() {
   const [image, setImage] = useState(null);
   const [prediction, setPrediction] = useState("");
