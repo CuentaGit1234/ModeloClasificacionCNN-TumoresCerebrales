@@ -31,11 +31,8 @@ function App() {
     }
   };
 
-  const imageUrl = imageName ? `${API_URL}/uploads/${imageName}` : "";
-  const graphUrl = imageName
-    ? `${API_URL}/uploads/probabilidades.png?t=${new Date().getTime()}`
-    : "";
-
+  const imageUrl = imageName ? `${API_URL}/static\uploads/${imageName}` : "";
+  const graphUrl = imageName ? `${API_URL}/static\uploads/probabilidades.png?t=${new Date().getTime()}` : "";
   return (
     <div className="app">
       <header>
