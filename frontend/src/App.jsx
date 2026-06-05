@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-const API_URL = `${window.location.origin}`
+const API_URL = `${window.location.origin}`;
 function App() {
   const [image, setImage] = useState(null);
   const [prediction, setPrediction] = useState("");
