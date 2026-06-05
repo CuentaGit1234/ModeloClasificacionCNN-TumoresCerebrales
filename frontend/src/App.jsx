@@ -20,7 +20,7 @@ function App() {
     const formData = new FormData();
     formData.append("image", image);
     try {
-      const res = await axios.post(`${API_URL}/api/clasificar`, formData);
+      const res = await axios.post(`${https://modeloclasificacioncnn-tumorescerebrales.onrender.com}/api/clasificar`, formData);
       const data = res.data;
       setPrediction(data.prediction);
       setImageName(data.image_name);
@@ -31,7 +31,7 @@ function App() {
     }
   };
 
-  const imageUrl = imageName ? `${API_URL}/uploads/${imageName}` : "";
+  const imageUrl = imageName ? `${https://modeloclasificacioncnn-tumorescerebrales.onrender.com}/uploads/${imageName}` : "";
   const graphUrl = imageName
     ? `${API_URL}/uploads/probabilidades.png?t=${new Date().getTime()}`
     : "";
